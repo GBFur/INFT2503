@@ -31,9 +31,9 @@ int main()
     }
   }
 
-  std::cout << "Antall under 10 er: " << temperatureUnder10 << "\n";
-  std::cout << "Antall mellom 10 og 20 er: " << temperatureBetween10And20 << "\n";
-  std::cout << "Antall over 20 er: " << temperatureOver20 << "\n";
+  std::cout << "Antall under 10 er: " << temperatureUnder10 << std::endl;
+  std::cout << "Antall mellom 10 og 20 er: " << temperatureBetween10And20 << std::endl;
+  std::cout << "Antall over 20 er: " << temperatureOver20 << std::endl;
 
   // signal that the code finished
   return 0;
