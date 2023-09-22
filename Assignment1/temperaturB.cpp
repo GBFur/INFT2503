@@ -15,7 +15,7 @@ int main()
 
   read_temperatures(temperatures, length);
 
-  for (size_t i = 0; i < length; i++)
+  for (int i = 0; i < length; i++)
   {
     if (temperatures[i] < 10)
     {
@@ -51,7 +51,7 @@ void read_temperatures(double temperatures[], int length)
     std::exit(EXIT_FAILURE);
   }
 
-  for (size_t i = 0; i < length; i++)
+  for (int i = 0; i < length; i++)
   {
     {
       file >> temperatures[i];

@@ -14,7 +14,7 @@ int main()
 
   std::cout << "Du skal skrive inn " << length << " temperaturer." << std::endl;
 
-  for (size_t i = 1; i <= length; i++)
+  for (int i = 1; i <= length; i++)
   {
     double temp;
     std::cout << "Temperatur nr " << i << ": " << std::endl;
