@@ -9,8 +9,11 @@ public:
   Circle(double radius_); // circle -> Circle
   int get_area() const;
   double get_circumference() const;
-  double radius; // Private doesn't work here
-};               // semicolon
+  // private double radius; -> Private doesn't work here, moved this down
+
+private:
+  double radius;
+}; // semicolon
 
 // ==> Implementasjon av klassen Circle
 
@@ -27,15 +30,19 @@ double Circle::get_circumference() const // add double as declared in constructo
 {
   double circumference = 2.0 * pi * radius;
   return circumference;
+
+  //could also just return directly
+  //return 2.0 * pi * radius;
 }
 
-//OPPGAVE 2 ---
+// OPPGAVE 2 ---
 
 #include <iostream>
 
 using namespace std;
 
-int main() {
+int main()
+{
   Circle circle(5);
 
   double area = circle.get_area();
