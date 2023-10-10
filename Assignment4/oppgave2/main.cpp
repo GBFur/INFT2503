@@ -21,8 +21,8 @@ public:
     box.pack_start(button);
     box.pack_start(label);
 
-    add(box);   // Add vbox to window
-    show_all(); // Show all widgets
+    add(box);
+    show_all();
 
     entry_first_name.signal_changed().connect([this]() {
       handle_sensitive();
@@ -47,8 +47,8 @@ private:
   }
 };
 
-  int main() {
-    auto app = Gtk::Application::create();
-    Window window;
-    return app->run(window);
-  }
+int main() {
+  auto app = Gtk::Application::create();
+  Window window;
+  return app->run(window);
+}
