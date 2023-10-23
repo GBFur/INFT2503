@@ -1,4 +1,3 @@
-#include <iostream>
 #include "Set.hpp"
 
 int main() {
@@ -21,9 +20,5 @@ int main() {
     set1.insert(8);
     set1.print(); // Prints 4 7 5 8
     
-
-
-
-
     return 0;
 }
